@@ -1,0 +1,17 @@
+{
+  "name": "ssl_verify",
+  "version": "1.0.0",
+  "description": "ssl verify tool",
+  "license": "MIT",
+  "no-optional": true,
+  "author": {
+    "name": "Shane Reaume",
+    "email": "shanereaume@gmail.com"
+  },
+  "scripts": {
+    "start": "node testssl.js"
+  },
+  "dependencies": {
+    "node-ssllabs": "^2.1.0"
+  }
+}
