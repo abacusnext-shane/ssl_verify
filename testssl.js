@@ -6,6 +6,7 @@ ssllabs.scan(dnstoscan, function (err, host) {
 	let grade = host.endpoints[0].grade;
 	console.dir(`Certificate Chain issues for ${dnstoscan} = ${res}`);
 	console.dir(`grade = ${grade}`);
+	console.dir(`full results: ${host}`);
 	return process.exit(res + (grade === 'A') ? 0 : 1);
 });
 // expected results = 0
